@@ -165,7 +165,6 @@ function WelcomeScreen({ route, navigation }) {
   
   useEffect(() => {
     const interval = setInterval(applyCharges, 60000); 
-    return () => clearInterval(interval);
   }, []);
 
   const handleDeposit = async () => {
